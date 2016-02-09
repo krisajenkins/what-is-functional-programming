@@ -108,9 +108,8 @@ Eliminating & controlling side-effects.
 ** =map=, =reduce=, =fold= ...
 ** Higher Order Functions
 ** Monads
-
-   
- One More Time
+** Lots Of Other Things
+* One More Time
 
 ** FP
 
