@@ -10,6 +10,123 @@
 
 * First, Do Some Harm
 
-* Links
- 
-http://blog.jenkster.com/
+[[./kerning.jpg]]
+
+* Every Function You Write 
+
+...has two sets of inputs & outputs.
+
+** The Familiar Pair
+
+#+BEGIN_SRC java
+public int add(int x, int y) {
+  return x + y;
+}
+#+END_SRC
+
+** TODO The Hidden Pair
+#+BEGIN_SRC java
+  public Program getCurrentProgram(TVGuide guide, int channel) {
+    Schedule schedule = guide.getSchedule(channel);
+
+    Program current = schedule.programAt(new Date());
+
+    return current;
+  }
+#+END_SRC
+
+** TODO Another Example
+
+#+BEGIN_SRC java
+public boolean processMessages(int n) {
+  int count = InboxManager.process(n);
+
+  return (count >= 1);
+}
+#+END_SRC
+
+* Hidden Inputs And Outputs
+
+Are called 'side-effects'.
+
+** Hidden Inputs And Outputs
+
+Are called 'side-causes' and 'side-effects'.
+
+* A Side-Effect Spotter's Guide
+
+** Spot The Side-Effect
+
+#+BEGIN_SRC javascript
+  todoList.remaining = function() {
+      var count = 0;
+      angular.forEach(todoList.todos, function(todo) {
+          count += todo.done ? 0 : 1;
+      });
+      return count;
+  };
+#+END_SRC
+
+** Spot The Side-Cause
+
+#+BEGIN_SRC javascript
+  todoList.addTodo = function() {
+      todoList.todos.push({text:todoList.todoText, done:false});
+      todoList.todoText = '';
+  };
+#+END_SRC
+
+* Side-Effects Destroy
+** Side-Effects Destroy Testing
+
+There are no black boxes any more.  
+
+** Side-Effects Destroy Components
+
+Nothing exists in isolation.  
+
+** Side-Effects Destroy Composition
+
+Things cannot be plugged together.
+
+* Side-Effects are the Complexity Iceberg
+
+#+BEGIN_SRC java
+public boolean processMessage(Queue queue) {...}
+#+END_SRC
+
+* So, What Is Functional Programming?
+
+** Functional Programming Is
+
+- Eliminating side-effects where you can.
+
+- Controlling them where you can't.
+
+- So that every component describes a relationship between its inputs and outputs.
+
+** Functional Programming Is
+
+Eliminating & controlling side-effects.
+
+** Functional Programming Enables
+
+- Easier reasoning
+- Easier testing.
+- Easier reuse.
+- Easier concurrency.
+
+* Wait, You Didn't Mention...
+** =map=, =reduce=, =fold= ...
+** Higher Order Functions
+** Monads
+
+   
+* One More Time
+
+Functional Programming is about eliminating side-effects where you
+can, controlling them where you can't.
+
+* Thank You
+
+For more: http://blog.jenkster.com
