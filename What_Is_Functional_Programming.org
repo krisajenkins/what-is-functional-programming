@@ -64,7 +64,12 @@ Are called 'side-causes' and 'side-effects'.
   };
 #+END_SRC
 
-* Side-Effects Destroy
+* Side-Effects are the Complexity Iceberg
+
+#+BEGIN_SRC java
+public boolean processMessage(Queue queue) {...}
+#+END_SRC
+
 ** Side-Effects Destroy Testing
 
 There are no black boxes any more.  
@@ -76,12 +81,6 @@ Nothing exists in isolation.
 ** Side-Effects Destroy Composition
 
 Things cannot be plugged together.
-
-* Side-Effects are the Complexity Iceberg
-
-#+BEGIN_SRC java
-public boolean processMessage(Queue queue) {...}
-#+END_SRC
 
 * So, What Is Functional Programming?
 
