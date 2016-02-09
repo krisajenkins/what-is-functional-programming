@@ -1,0 +1,15 @@
+#+OPTIONS: toc:nil num:nil
+#+OPTIONS: reveal_history:t
+#+REVEAL_THEME: black
+#+REVEAL_TRANS: convex
+#+REVEAL_EXTRA_CSS: extra.css
+#+COPYRIGHT: © Kris Jenkins, 2016
+#+AUTHOR:
+#+TITLE: What Is Functional Programming?
+#+EMAIL: @krisajenkins
+
+* First, Do Some Harm
+
+* Links
+ 
+http://blog.jenkster.com/
