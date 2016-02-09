@@ -23,18 +23,7 @@ public int add(int x, int y) {
 }
 #+END_SRC
 
-** TODO The Hidden Pair
-#+BEGIN_SRC java
-  public Program getCurrentProgram(TVGuide guide, int channel) {
-    Schedule schedule = guide.getSchedule(channel);
-
-    Program current = schedule.programAt(new Date());
-
-    return current;
-  }
-#+END_SRC
-
-** TODO Another Example
+** The Hidden Pair
 
 #+BEGIN_SRC java
 public boolean processMessages(int n) {
