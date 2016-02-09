@@ -2,7 +2,6 @@
 #+OPTIONS: reveal_history:t
 #+REVEAL_THEME: black
 #+REVEAL_TRANS: convex
-#+REVEAL_EXTRA_CSS: extra.css
 #+COPYRIGHT: © Kris Jenkins, 2016
 #+AUTHOR:
 #+TITLE: What Is Functional Programming?
@@ -122,11 +121,15 @@ Eliminating & controlling side-effects.
 ** Monads
 
    
-* One More Time
+ One More Time
+
+** FP
 
 Functional Programming is about eliminating side-effects where you
 can, controlling them where you can't.
 
 * Thank You
 
-For more: http://blog.jenkster.com
+Twitter & more: @krisajenkins
+
+Blog: http://blog.jenkster.com
